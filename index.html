@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TieMan114 Portofolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=New+Amsterda|Jersey+10" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">TieMan114</div>
+        <div id="disclaimer" >Work In Progress!</div>
+        <div id="nav-list-div">
+            <ul id="nav-list">
+                <li><a href="index.html" class="nav-item-active">Home</a></li>
+                <li><a href="about.html" class="nav-item-inactive">About</a></li>
+                <li><a href="contact.html" class="nav-item-inactive">Contact</a></li>
+                <li><a href="projects.html" class="nav-item-inactive">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="welcome-section" class="welcome-section">
+        <div id="portrait-container">
+            <img src="res/img/me.jpg" alt="Picture of Andrei gubani aka TieMan114" id="portrait">
+        </div>
+        <div id="welcome-text-container">
+            <h1>Hello, I'm Andrei</h1>
+            <p>Also known as TieMan114</p>
+        </div>
+    </section>
+
+    <section id="scroll-indicator">
+        <p>Scroll down!</p>
+        <div class="arrow"></div>
+    </section>
+
+    <section id="specialties-section" class="specialties-section">
+        <h2>Specialties</h2>
+        <div id="specialties-container">
+            <div class="specialty">
+                <h3>Development</h3>
+                <p>Java, C#, C++, Python, HTML, CSS</p>
+            </div>
+            <div class="specialty">
+                <h3>Music</h3>
+                <p>Mix & Mastering, Live-Mix, Producing</p>
+            </div>
+            <div class="specialty">
+                <h3>Photography</h3>
+                <p>Concert, Portrait, Landscapes</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+
+<script>
+    window.addEventListener('scroll', function() {
+        const scrollIndicator = document.getElementById('scroll-indicator');
+        if (window.scrollY > 50) { // Adjust the value as needed
+            scrollIndicator.style.opacity = '0';
+        } else {
+            scrollIndicator.style.opacity = '1';
+        }
+    });
+</script>
